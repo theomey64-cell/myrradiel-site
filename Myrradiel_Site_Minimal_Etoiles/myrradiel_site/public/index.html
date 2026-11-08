@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Myrradiel — Académie de magie</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;family=Cinzel:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="/style.css" rel="stylesheet"/></head><body>
+<header><a class="brand" href="#accueil"><span class="brand-name">MYRRADIEL</span><span class="brand-star">✦</span></a><button aria-label="Ouvrir le menu" class="mobile" id="menuToggle">☰</button><nav id="nav"><a class="active" href="#accueil">Accueil</a><a href="#reglement">Règlement</a><a href="#lore">Lore</a><a href="#wiki">Wiki</a><a href="#qcm">QCM</a><a href="#galerie">Galerie</a><a href="#boutique">Boutique</a></nav></header>
+<main><section class="hero" id="accueil"><canvas aria-hidden="true" id="starfield"></canvas><div class="orbit orbit1"></div><div class="orbit orbit2"></div><div class="light light1"></div><div class="light light2"></div><div class="heroContent"><div class="eyebrow">MYRRADIEL / ACADÉMIE DE MAGIE</div><p class="welcome">Bienvenue, <strong id="pseudo">voyageur</strong>.</p><p class="intro" id="intro">Une académie de magie. Des histoires à écrire. Un monde à découvrir.</p><div class="account" id="account"><span class="status" id="status">● Discord non connecté</span><img alt="Avatar Discord" hidden="" id="avatar"/></div><div class="actions"><a class="btn primary" href="/auth/discord" id="discordBtn">◈ Lier mon Discord</a><a class="btn secondary" href="#lore">Découvrir l'académie <span>→</span></a></div><p class="notice" id="notice"></p></div><a class="scroll" href="#reglement">EXPLORER ↓</a></section>
+<section class="document-section" id="reglement"><div class="doc-head"><span class="kicker">CODE DE CONDUITE • MYRRADIEL</span><h2>Règlement du serveur</h2><p>Les règles officielles de la vie à l’Académie.</p></div><article class="document-card"><h1 id="chapitre-1">✧ RÈGLEMENT DU SERVEUR ✧</h1>
+<p><strong>Myrradiel</strong> <em>Élèves • Maisons • Cours • Baguettes • Sortilèges • Conflits</em> <strong>PRINCIPE FONDAMENTAL —</strong> Le règlement est considéré comme lu et accepté dès l’arrivée sur le serveur et sur le Discord. L’administration peut le modifier afin de préserver l’équilibre, la cohérence de l’univers et la qualité du jeu.</p>
+<hr/>
+<h2 id="chapitre-2"><em>✧ SOMMAIRE ✧</em></h2>
+<ol>
+<li><strong>Fondamentaux du RolePlay</strong></li>
+<li><strong>Règles générales et comportement</strong></li>
+<li><strong>Création et progression des personnages</strong></li>
+<li><strong>École, maisons et vie scolaire</strong></li>
+<li><strong>Baguettes magiques</strong></li>
+<li><strong>Magie, apprentissage et sortilèges</strong></li>
+<li><strong>Duels, conflits et blessures</strong></li>
+<li><strong>Personnel, préfets et discipline</strong></li>
+<li><strong>Infirmerie, soins et potions</strong></li>
+<li><strong>Activités interdites et magie noire</strong></li>
+<li><strong>Enlèvements, vols et intrusions</strong></li>
+<li><strong>Cours, examens, clubs et sorties</strong></li>
+<li><strong>Zones protégées et Mass RP</strong></li>
+<li><strong>Coma, souvenirs et Mort RP</strong></li>
+<li><strong>Discord, litiges et sanctions</strong></li>
+</ol>
+<hr/>
+<h2 id="chapitre-3"><em>1. Fondamentaux du RolePlay</em></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Terme</strong></th>
+<th><strong>Définition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RP / IC</strong></td>
+<td><strong>Tout ce qui appartient au personnage et au monde de l’école.</strong></td>
+</tr>
+<tr>
+<td><strong>HRP / OOC</strong></td>
+<td><strong>Tout ce qui appartient au joueur, au Discord, au stream ou à la vie réelle.</strong></td>
+</tr>
+<tr>
+<td><strong>Metagaming</strong></td>
+<td><strong>Utiliser en jeu une information obtenue hors jeu : stream, Discord, pseudo, interface, message privé ou conversation HRP.</strong></td>
+</tr>
+<tr>
+<td><strong>Powergaming</strong></td>
+<td><strong>Imposer une action irréalisable ou ne laissant aucune possibilité raisonnable de réaction.</strong></td>
+</tr>
+<tr>
+<td><strong>Mix RP</strong></td>
+<td><strong>Mélanger volontairement les échanges RP et HRP au cours d’une scène.</strong></td>
+</tr>
+<tr>
+<td><strong>Freekill</strong></td>
+<td><strong>Blesser, mettre dans le coma ou tuer un personnage sans motif RP construit.</strong></td>
+</tr>
+<tr>
+<td><strong>Revenge kill</strong></td>
+<td><strong>Revenir se venger après une défaite ou un coma en utilisant des souvenirs perdus.</strong></td>
+</tr>
+<tr>
+<td><strong>Forcing RP</strong></td>
+<td><strong>Forcer l’issue d’une scène, inventer un effet ou priver autrui de choix sans mécanique ni accord.</strong></td>
+</tr>
+<tr>
+<td><strong>No Fear</strong></td>
+<td><strong>Ignorer sans justification la peur d’être blessé, capturé, renvoyé ou menacé par une force supérieure.</strong></td>
+</tr>
+<tr>
+<td><strong>No Pain</strong></td>
+<td><strong>Ignorer les blessures, la fatigue ou les conséquences physiques et magiques d’une scène.</strong></td>
+</tr>
+<tr>
+<td><strong>Mass RP</strong></td>
+<td><strong>Prendre en compte les élèves, professeurs, portraits, fantômes et membres du personnel supposés présents.</strong></td>
+</tr>
+<tr>
+<td><strong>Win RP</strong></td>
+<td><strong>Chercher systématiquement à gagner au détriment de la cohérence et du fair-play.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="chapitre-4"><em>Règles fondamentales</em></h3>
+<ul>
+<li><strong>Votre personnage possède un nom crédible, une histoire, des qualités, des défauts, des peurs et des objectifs.</strong></li>
+<li><strong>Il ne peut ni tout savoir, ni tout maîtriser, ni exceller immédiatement.</strong></li>
+<li><strong>Le fair-play prime sur la victoire. Un échec peut créer davantage de jeu qu’une victoire forcée.</strong></li>
+<li><strong>Toute action importante doit reposer sur des éléments réellement obtenus en jeu.</strong></li>
+<li><strong>Il est interdit d’inventer un sort, une vision, une preuve, un familier espion ou un objet absent du système.</strong></li>
+<li><strong>Une scène contestée doit être terminée, sauf danger HRP, SafeWord ou instruction du staff. Le désaccord est ensuite traité par ticket.</strong></li>
+<li><strong>Triche, macros, exploits, streamstalk et streamhack sont interdits.</strong></li>
+</ul>
+<p><strong>JEU AVANT VICTOIRE</strong> — Une année d’étude, une fonction, une baguette rare, un objet magique ou une réputation ne permet jamais d’imposer la peur, la soumission, la lecture des pensées, la mort ou la victoire.</p>
+<h2 id="chapitre-5"><em>2. Règles générales et comportement</em></h2>
+<p>Chaque joueur possède ses propres limites. Elles doivent être respectées en toutes circonstances. <strong>SafeWord officiel : « JE N’AIME PAS LES CANARDS. »</strong> Dès que cette phrase est prononcée, la scène doit immédiatement prendre fin de manière cohérente en RP, sans débat sur le moment.</p>
+<ul>
+<li><strong>Les insultes strictement RP sont tolérées avec mesure. Les propos discriminatoires HRP, le harcèlement, les menaces réelles et les attaques personnelles sont interdits.</strong></li>
+<li><strong>Les scènes sexuelles non consenties, les violences sexuelles et le RP de viol sont strictement interdits.</strong></li>
+<li><strong>Les scènes de torture doivent rester non graphiques et nécessitent l’accord HRP préalable de la victime, révocable à tout moment.</strong></li>
+<li><strong>Les relations impliquant des personnages mineurs doivent rester appropriées à leur âge et sans contenu sexuel.</strong></li>
+<li><strong>Les modificateurs de voix doivent rester compréhensibles et ne donner aucun avantage.</strong></li>
+<li><strong>Il est interdit de se déconnecter, réapparaître, changer de personnage ou ranger un objet pour fuir une conséquence RP.</strong></li>
+</ul>
+<h3 id="chapitre-6"><em>Temporalité</em></h3>
+<p>Sauf annonce contraire, un jour réel équivaut à une semaine en jeu et une semaine réelle à un mois en jeu. Les vacances, examens et changements d’année sont fixés par l’administration.</p>
+<h2 id="chapitre-7"><em>3. Création et progression des personnages</em></h2>
+<p>L’identité d’un personnage repose sur son histoire, sa personnalité, son année d’étude, ses relations et les disciplines qu’il apprend réellement en RP.</p>
+<ul>
+<li><strong>L’âge, le niveau scolaire et le vécu doivent être cohérents.</strong></li>
+<li><strong>Un nouvel élève ne connaît pas toute l’école, ses passages secrets ou l’ensemble des sortilèges.</strong></li>
+<li><strong>Une famille célèbre ou riche ne confère aucun privilège sans validation.</strong></li>
+<li><strong>Les personnages prodiges conservent de vraies faiblesses et progressent en jeu.</strong></li>
+<li><strong>Voyance, métamorphose innée, résistance magique et autres dons rares nécessitent une validation s’ils ne sont pas gérés par le système.</strong></li>
+<li><strong>Les connaissances viennent des cours, entraînements, recherches et scènes jouées.</strong></li>
+<li><strong>Voir un sort ou posséder un manuel ne suffit pas à le maîtriser.</strong></li>
+<li><strong>Devenir préfet ou intégrer le personnel relève d’une évolution RP et des décisions de l’administration.</strong></li>
+</ul>
+<h2 id="chapitre-8"><em>4. École, maisons et vie scolaire</em></h2>
+<ul>
+<li><strong>Une maison crée une identité collective, des traditions et des rivalités. Elle ne détermine pas la moralité de ses membres.</strong></li>
+<li><strong>Les rivalités restent RP et ne justifient ni harcèlement HRP, ni acharnement, ni exclusion.</strong></li>
+<li><strong>Les points de maison doivent être gagnés ou perdus par les moyens prévus.</strong></li>
+<li><strong>Les dortoirs et salles communes sont réservés à leurs membres, sauf invitation ou intrusion RP cohérente.</strong></li>
+<li><strong>Les horaires de cours, couvre-feux, restrictions d’accès et consignes du personnel doivent être pris en compte.</strong></li>
+<li><strong>Une farce doit créer du jeu sans bloquer durablement un joueur ni causer une blessure grave sans accord.</strong></li>
+</ul>
+<h3 id="chapitre-9"><em>Clubs et associations</em></h3>
+<p>Tout club officiel présente au staff son nom, ses objectifs, son responsable, son lieu de réunion et ses activités.</p>
+<ul>
+<li><strong>Un club doit créer du jeu et ne peut servir uniquement à accumuler objets, pouvoirs ou influence.</strong></li>
+<li><strong>Sa hiérarchie reste RP et ne donne aucun pouvoir HRP sur ses membres.</strong></li>
+<li><strong>Une société secrète ou dangereuse peut nécessiter un dossier staff.</strong></li>
+</ul>
+<h2 id="chapitre-10"><em>5. Baguettes magiques</em></h2>
+<ul>
+<li><strong>La baguette est l’outil magique principal du personnage. Son apparence et son histoire peuvent être personnalisées dans les limites du lore.</strong></li>
+<li><strong>Une baguette rare ou ancienne n’accorde aucun pouvoir absent du système.</strong></li>
+<li><strong>Une baguette visible est considérée comme visible en RP.</strong></li>
+<li><strong>Une baguette maudite ou un artefact équivalent nécessite justification et validation.</strong></li>
+<li><strong>Une baguette endommagée, confisquée ou perdue doit être jouée comme telle.</strong></li>
+<li><strong>Pointer sa baguette vers quelqu’un constitue une menace et une escalade RP.</strong></li>
+<li><strong>L’incantation, la gestuelle, la portée, le délai et les limites du système doivent être respectés.</strong></li>
+<li><strong>Il est interdit d’attaquer sans motif, de viser un personnage inconscient ou de multiplier les sorts sur une cible neutralisée.</strong></li>
+<li><strong>Prendre, briser ou confisquer la baguette d’un autre personnage doit être joué et laisser une réaction possible.</strong></li>
+<li><strong>Une baguette volée ne donne pas accès aux compétences ou aux souvenirs de son propriétaire.</strong></li>
+<li><strong>L’usage agressif d’une baguette dans les espaces communs entraîne des conséquences disciplinaires.</strong></li>
+</ul>
+<h2 id="chapitre-11"><em>6. Magie, apprentissage et sortilèges</em></h2>
+<ul>
+<li><strong>Toute magie utilisée doit être connue du personnage, accessible dans le système et cohérente avec sa formation.</strong></li>
+<li><strong>L’apprentissage doit être joué. Les exercices et les échecs font partie de la progression.</strong></li>
+<li><strong>Les sorts respectent leur portée, temps d’incantation, coût, récupération et effets prévus.</strong></li>
+<li><strong>Une emote décrit une tentative, jamais un résultat imposé.</strong></li>
+<li><strong>La magie ne permet pas d’obtenir des informations HRP, d’identifier automatiquement une personne masquée, de lire ses pensées ou de retrouver une cible sans mécanique dédiée.</strong></li>
+<li><strong>Il est interdit de contourner les délais, animations, fatigue ou limites du système.</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Catégorie</strong></th>
+<th><strong>Règle</strong></th>
+<th><strong>Validation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sorts offensifs</strong></td>
+<td><strong>Réservés aux exercices encadrés, duels consentis, situations défensives ou conflits RP établis.</strong></td>
+<td><strong>Selon le système</strong></td>
+</tr>
+<tr>
+<td><strong>Soins avancés</strong></td>
+<td><strong>Ne suppriment pas instantanément les blessures graves et ne remplacent pas l’infirmerie.</strong></td>
+<td><strong>Formation requise</strong></td>
+</tr>
+<tr>
+<td><strong>Magie noire</strong></td>
+<td><strong>Malédictions, âmes et invocations dangereuses ne peuvent être improvisées.</strong></td>
+<td><strong>Dossier staff</strong></td>
+</tr>
+<tr>
+<td><strong>Contrôle mental</strong></td>
+<td><strong>Ne peut retirer le libre arbitre. Effets temporaires et limités uniquement.</strong></td>
+<td><strong>Accord ou mécanique</strong></td>
+</tr>
+<tr>
+<td><strong>Téléportation</strong></td>
+<td><strong>Interdite pour fuir une scène ou infiltrer un lieu sans dispositif prévu.</strong></td>
+<td><strong>Mécanique ou événement</strong></td>
+</tr>
+<tr>
+<td><strong>Divination</strong></td>
+<td><strong>Donne des pistes, jamais une position parfaite ou des informations HRP.</strong></td>
+<td><strong>Scène encadrée</strong></td>
+</tr>
+<tr>
+<td><strong>Métamorphose</strong></td>
+<td><strong>Ne permet ni usurpation parfaite, ni gain de pouvoirs.</strong></td>
+<td><strong>Selon le système</strong></td>
+</tr>
+<tr>
+<td><strong>Malédiction permanente</strong></td>
+<td><strong>Toute altération durable exige une histoire et du contre-jeu.</strong></td>
+<td><strong>Joueur + staff</strong></td>
+</tr>
+<tr>
+<td><strong>Rituel majeur</strong></td>
+<td><strong>Doit être préparé, visible, interrompable et proportionné.</strong></td>
+<td><strong>Staff ou événement</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>MAGIE ET CONSENTEMENT :</strong> — Aucun sort, philtre ou enchantement ne peut forcer une romance, un acte sexuel, une humiliation extrême, un changement permanent ou une Mort RP.</p>
+<h2 id="chapitre-12"><em>7. Duels, conflits et blessures</em></h2>
+<ul>
+<li><strong>Un duel doit être consenti, avoir des règles claires et se dérouler dans un lieu approprié.</strong></li>
+<li><strong>Les participants définissent les conditions de victoire, les sorts interdits et l’arbitrage.</strong></li>
+<li><strong>Une victoire n’autorise ni humiliation prolongée, ni vol total, ni blessure permanente sans accord.</strong></li>
+<li><strong>Dégainer une baguette constitue une escalade. Dialogue et reddition doivent rester possibles.</strong></li>
+<li><strong>La différence de nombre, la surprise, le terrain, l’expérience et l’état du personnage doivent compter.</strong></li>
+<li><strong>Les renforts ne rejoignent une scène que s’ils ont été alertés par un moyen réellement utilisé en RP.</strong></li>
+<li><strong>Fear RP et Pain RP doivent être respectées.</strong></li>
+<li><strong>Après un duel, jouez blessures, fatigue et effets secondaires.</strong></li>
+<li><strong>Un sort de protection ne rend pas invincible.</strong></li>
+</ul>
+<h2 id="chapitre-13"><em>8. Personnel, préfets et discipline</em></h2>
+<p>Les professeurs, surveillants, préfets et membres de la direction assurent la sécurité de l’école. Leur autorité RP ne les dispense jamais du fair-play.</p>
+<ul>
+<li><strong>Protéger toute personne sans favoritisme lié à une maison, une famille ou une réputation.</strong></li>
+<li><strong>Privilégier la parole, la désescalade et le désarmement avant les sorts dangereux.</strong></li>
+<li><strong>Utiliser uniquement les pouvoirs, clés, objets et sorts correspondant à sa fonction.</strong></li>
+<li><strong>Respecter la confidentialité des plaintes, enquêtes et dossiers médicaux.</strong></li>
+<li><strong>Une fouille nécessite un motif RP valable et doit être jouée.</strong></li>
+<li><strong>Toute confiscation doit être liée à l’infraction ; les objets sans rapport sont rendus.</strong></li>
+<li><strong>Les dortoirs, coffres et locaux de club nécessitent une autorisation ou une urgence évidente.</strong></li>
+<li><strong>Retenues, retraits de points et exclusions doivent être motivés, proportionnés et jouables.</strong></li>
+<li><strong>Un membre du personnel corrompu ou gravement abusif nécessite un dossier staff.</strong></li>
+</ul>
+<h2 id="chapitre-14"><em>9. Infirmerie, soins et potions</em></h2>
+<ul>
+<li><strong>Le personnel soigne sans favoritisme, dans la limite de sa sécurité.</strong></li>
+<li><strong>Avant un soin, un diagnostic doit être joué.</strong></li>
+<li><strong>Un soin demande du temps ; une potion ou un sort ne remet pas automatiquement debout après une blessure grave.</strong></li>
+<li><strong>La magie ne régénère pas un membre, n’efface pas une séquelle permanente et ne ramène pas un mort sans événement validé.</strong></li>
+<li><strong>Les dossiers médicaux sont confidentiels.</strong></li>
+<li><strong>La fabrication de potions respecte les recettes, ingrédients, temps de préparation et compétences apprises.</strong></li>
+<li><strong>Poisons, philtres de contrôle et expérimentations peuvent nécessiter une validation staff.</strong></li>
+</ul>
+<h2 id="chapitre-15"><em>10. Activités interdites et magie noire</em></h2>
+<p>Les groupes clandestins et pratiques interdites créent de l’opposition RP. Ils ne donnent aucun droit permanent à la violence.</p>
+<ul>
+<li><strong>Un groupe clandestin doit avoir des objectifs jouables et un responsable.</strong></li>
+<li><strong>Ses membres préservent leur couverture et acceptent enquêtes, confiscations, trahisons et échecs.</strong></li>
+<li><strong>Il est interdit de provoquer gratuitement le personnel uniquement pour déclencher un combat.</strong></li>
+<li><strong>Les activités majeures nécessitent une présence suffisante de défenseurs et, selon leur gravité, une validation staff.</strong></li>
+</ul>
+<p>Peuvent être joués dans un cadre réglementé : trafic de baguettes, ingrédients, potions ou objets interdits ; recel ; extorsion raisonnable ; falsification de documents ; espionnage ; infiltration ; sabotage ; enlèvement ; rituels interdits et malédictions. <strong>LIMITE —</strong> Aucune activité illégale ne permet de vider entièrement l’inventaire d’un joueur, de détruire son personnage, de lui imposer une dette impossible ou de l’empêcher durablement de jouer.</p>
+<h2 id="chapitre-16"><em>11. Enlèvements, vols et intrusions</em></h2>
+<ul>
+<li><strong>Un enlèvement doit avoir un objectif RP précis et rester actif, raisonnable et proportionné.</strong></li>
+<li><strong>Il est interdit d’enlever un préfet ou un professeur uniquement parce qu’il a sanctionné votre personnage.</strong></li>
+<li><strong>Les limites et indisponibilités HRP de l’otage doivent être respectées.</strong></li>
+<li><strong>Une même personne ne peut être ciblée plusieurs fois dans une courte période par le même groupe.</strong></li>
+<li><strong>Le vol doit laisser au joueur de quoi poursuivre son RP.</strong></li>
+<li><strong>Une baguette ne peut être volée durablement sans accord, mécanique ou validation staff.</strong></li>
+<li><strong>Pénétrer dans un bureau, un dortoir, une réserve ou les archives exige une préparation réellement jouée.</strong></li>
+<li><strong>Un passage secret ne peut être connu grâce au savoir HRP.</strong></li>
+<li><strong>Les protections magiques, portraits, fantômes et rondes du personnel doivent être pris en compte.</strong></li>
+<li><strong>Une intrusion dans un lieu majeur nécessite une validation staff.</strong></li>
+</ul>
+<h2 id="chapitre-17"><em>12. Cours, examens, clubs et sorties</em></h2>
+<ul>
+<li><strong>Respectez le professeur, le cadre de la matière et les consignes de sécurité.</strong></li>
+<li><strong>Perturber légèrement un cours peut créer du RP ; empêcher les autres de participer est interdit.</strong></li>
+<li><strong>Un cours suivi ne garantit pas la maîtrise immédiate de son contenu.</strong></li>
+<li><strong>Toute aide HRP ou transmission d’informations sans moyen RP pendant un examen constitue de la triche.</strong></li>
+<li><strong>Un échec doit être accepté et peut conduire à un rattrapage.</strong></li>
+<li><strong>Les règles des compétitions doivent être respectées.</strong></li>
+<li><strong>Sabotages et rivalités nécessitent un motif RP, des indices et du contre-jeu.</strong></li>
+<li><strong>Pendant une sortie, respectez le groupe, les encadrants et les restrictions du lieu.</strong></li>
+<li><strong>Tout bug ou exploit doit être signalé et ne doit pas être reproduit.</strong></li>
+</ul>
+<h2 id="chapitre-18"><em>13. Zones protégées et Mass RP</em></h2>
+<p>Sont protégés par défaut : la zone d’arrivée, l’infirmerie, les salles pendant les cours, la grande salle pendant les cérémonies, le bureau de la direction et tout lieu annoncé par le staff.</p>
+<ul>
+<li><strong>Il est interdit d’y commencer un racket, un enlèvement, un duel sauvage ou un meurtre.</strong></li>
+<li><strong>Une scène commencée ailleurs ne disparaît pas si une personne se réfugie dans une zone protégée.</strong></li>
+<li><strong>Une zone protégée ne permet ni provocation, ni stockage d’objets volés, ni abus de protection.</strong></li>
+<li><strong>Les couloirs, salles communes, réfectoires et bibliothèques sont supposés fréquentés.</strong></li>
+<li><strong>Un duel, une explosion, un sort spectaculaire ou un objet interdit peut être remarqué et signalé.</strong></li>
+<li><strong>Les personnages non joueurs comptent comme des personnes.</strong></li>
+<li><strong>Une dissimulation réduit les chances d’identification, mais la voix, la silhouette, la baguette, l’uniforme et les témoins peuvent fournir des indices.</strong></li>
+</ul>
+<h2 id="chapitre-19"><em>14. Coma, souvenirs et Mort RP</em></h2>
+<ul>
+<li><strong>Après un coma, le personnage oublie les circonstances immédiates de sa chute, sauf indication contraire du système ou du staff.</strong></li>
+<li><strong>Il ne peut retourner immédiatement sur la scène, guider ses alliés ou se venger.</strong></li>
+<li><strong>Le récit de témoins ne restitue pas des souvenirs parfaitement précis.</strong></li>
+<li><strong>Les blessures et effets magiques continuent d’être joués après le réveil.</strong></li>
+<li><strong>Toute Mort RP planifiée nécessite un dossier avec identité, motifs, preuves RP et scène envisagée.</strong></li>
+<li><strong>L’acceptation explicite du staff est obligatoire.</strong></li>
+<li><strong>La scène doit offrir une sortie ou un contre-jeu crédible.</strong></li>
+<li><strong>Le nouveau personnage ne reprend ni souvenirs, ni biens, ni relations, ni responsabilités de l’ancien.</strong></li>
+</ul>
+<p><strong>INTERDICTION ABSOLUE —</strong> Une résurrection, un rituel, un voyage temporel ou un prétexte scénaristique ne peut annuler une Mort RP validée sans décision du staff.</p>
+<h2 id="chapitre-20"><em>15. Discord, litiges et sanctions</em></h2>
+<ul>
+<li><strong>Le règlement est accepté dès l’accès au serveur et au Discord.</strong></li>
+<li><strong>Les problèmes de scène se règlent par ticket, jamais dans les salons publics.</strong></li>
+<li><strong>Fournissez des preuves complètes : vidéo non coupée, captures, heure, identités et contexte.</strong></li>
+<li><strong>Les enregistrements servent uniquement de preuves HRP.</strong></li>
+<li><strong>Mensonges au staff, preuves falsifiées, pressions HRP et harcèlement aggravent les sanctions.</strong></li>
+<li><strong>Le staff peut appliquer avertissement, retrait d’objet, reprise de scène, sanction temporaire, bannissement ou Mort RP administrative.</strong></li>
+<li><strong>L’administration statue sur les situations non prévues dans l’intérêt du RolePlay.</strong></li>
+</ul>
+<h3 id="chapitre-21"><em>Échelle indicative des validations</em></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Sans dossier</strong></th>
+<th><strong>Validation préalable</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Duel consenti, farce mineure, magie courante</strong></td>
+<td><strong>Oui, selon les règles</strong></td>
+<td><strong>Non</strong></td>
+</tr>
+<tr>
+<td><strong>Création d’un club officiel</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Staff</strong></td>
+</tr>
+<tr>
+<td><strong>Société secrète ou groupe de magie noire</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Staff</strong></td>
+</tr>
+<tr>
+<td><strong>Intrusion dans un lieu majeur</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Staff / événement</strong></td>
+</tr>
+<tr>
+<td><strong>Corruption grave du personnel</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Staff</strong></td>
+</tr>
+<tr>
+<td><strong>Don magique rare</strong></td>
+<td><strong>Selon le système</strong></td>
+<td><strong>Staff si hors système</strong></td>
+</tr>
+<tr>
+<td><strong>Rituel majeur ou magie noire avancée</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Staff / événement</strong></td>
+</tr>
+<tr>
+<td><strong>Malédiction ou transformation permanente</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Joueur concerné + staff</strong></td>
+</tr>
+<tr>
+<td><strong>Assassinat avec Mort RP</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Dossier Mort RP</strong></td>
+</tr>
+<tr>
+<td><strong>Attaque majeure contre l’école</strong></td>
+<td><strong>Non</strong></td>
+<td><strong>Événement staff</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="chapitre-22"><em>FORMULE DE CLÔTURE</em></h3>
+<p>L’école est un monde partagé. Chaque joueur est responsable de la qualité des histoires qu’il crée, mais aussi de l’espace qu’il laisse aux autres pour répondre, apprendre, évoluer, échouer, réussir et écrire leur propre aventure magique. <em>Règlement officiel • Version à valider par l’administration</em></p>
+</article></section>
+<section class="placeholder" id="lore"><h2>Lore</h2><p>Section à compléter avec vos textes officiels.</p></section><section class="document-section" id="wiki"><div class="doc-head"><span class="kicker">GRIMOIRE • SAVOIRS MAGIQUES</span><h2>Wiki de Myrradiel</h2><p>Explorez les connaissances de l’Académie.</p></div><article class="document-card"><h1 id="chapitre-1">✧ Comprendre votre baguette ✧</h1>
+<p><strong>« Ce n’est pas le sorcier qui choisit sa baguette. C’est elle qui le reconnaît. »</strong></p>
+<p>Aucune baguette n’est véritablement identique à une autre.</p>
+<p>Son <strong>bois</strong>, son <strong>cœur</strong>, sa <strong>longueur</strong>, sa <strong>souplesse</strong> et sa <strong>rareté</strong> forment ensemble une combinaison qui lui est propre. Deux baguettes peuvent partager le même bois sans avoir le même tempérament, tout comme deux sorciers peuvent se ressembler sans jamais pratiquer la magie de la même manière.</p>
+<p>Ce guide vous permettra d’interpréter la vôtre.</p>
+<hr/>
+<h1 id="chapitre-2">✧ Les caractéristiques d'une baguette ✧</h1>
+<p>Avant de découvrir les différents bois, cœurs, longueurs ou niveaux de souplesse, il est important de comprendre ce que représente chacune de ces caractéristiques.</p>
+<h2 id="chapitre-3"><em>✧ La rareté</em></h2>
+<p>La rareté ne représente pas directement la puissance d’une baguette.</p>
+<p>Une baguette commune peut parfaitement choisir un sorcier exceptionnel, tandis qu’une baguette mythique ne fera pas nécessairement de son propriétaire un meilleur mage.</p>
+<p>Elle indique avant tout la <strong>rareté des matériaux qui la composent et le caractère exceptionnel de leur association</strong>.</p>
+<h2 id="chapitre-4"><em>✧ Le bois</em></h2>
+<p>Le bois constitue le <strong>corps et le tempérament profond</strong> de la baguette.</p>
+<p>Chaque essence possède ses propres affinités. Certaines semblent attirées par les personnalités ambitieuses, d’autres par les êtres protecteurs, curieux, courageux ou indépendants.</p>
+<p>Le bois peut également influencer la manière dont une baguette évolue aux côtés de son propriétaire.</p>
+<p>Il représente généralement ce que le sorcier <strong>est profondément</strong>.</p>
+<h2 id="chapitre-5"><em>✧ Le cœur</em></h2>
+<p>Si le bois représente le tempérament de la baguette, son cœur en est <strong>l’instinct magique</strong>.</p>
+<p>Il influence notamment sa manière de réagir à la magie et le type de sorcier avec lequel elle crée le plus facilement une affinité.</p>
+<h2 id="chapitre-6"><em>✧ La longueur</em></h2>
+<p>La longueur d’une baguette ne correspond pas simplement à la taille du sorcier.</p>
+<p>Elle semble davantage refléter sa <strong>présence, son tempérament et sa manière d’exprimer la magie</strong>.</p>
+<h2 id="chapitre-7"><em>✧ La souplesse</em></h2>
+<p>La souplesse représente principalement la <strong>capacité d’adaptation du couple formé par la baguette et son propriétaire</strong>.</p>
+<p>Elle ne mesure ni la puissance ni le talent magique.</p>
+<hr/>
+<h1 id="chapitre-8">✧ Les différentes raretés ✧</h1>
+<h3 id="chapitre-9">Commune</h3>
+<p>Une baguette composée de matériaux relativement répandus chez les fabricants.</p>
+<p>Elles sont généralement <strong>stables, fiables et équilibrées</strong>.</p>
+<p>Le terme « commune » ne signifie donc jamais médiocre. Certaines des meilleures baguettes appartiennent à cette catégorie.</p>
+<h3 id="chapitre-10">Peu commune</h3>
+<p>Une association plus inhabituelle.</p>
+<p>Ces baguettes possèdent souvent un <strong>tempérament plus marqué</strong> et peuvent rechercher certaines qualités particulières chez leur propriétaire.</p>
+<p>Les rencontrer reste relativement rare.</p>
+<h3 id="chapitre-11">Rare</h3>
+<p>Fabriquées à partir de composants difficiles à obtenir ou particulièrement exigeants.</p>
+<p>Ces baguettes ont souvent une <strong>personnalité très affirmée</strong> et ne s’accordent pas facilement avec n’importe quel sorcier.</p>
+<p>Être choisi par l’une d’elles demeure inhabituel.</p>
+<h3 id="chapitre-12">Mythique</h3>
+<p>Des baguettes dont l’existence même relève presque de la légende.</p>
+<p>Leurs composants ou leur combinaison sont <strong>exceptionnellement rares</strong>, parfois uniques.</p>
+<p>Très peu de sorciers en posséderont une au cours de leur existence.</p>
+<p>Une baguette mythique n’est cependant pas synonyme de puissance absolue.</p>
+<p><strong>Elle est rare. Pas invincible.</strong></p>
+<hr/>
+<h1 id="chapitre-13">✧ Les différents cœurs ✧</h1>
+<h3 id="chapitre-14">Plume de Phénix</h3>
+<p>Indépendante et exigeante.</p>
+<p>Ces baguettes possèdent souvent une grande diversité magique, mais accordent difficilement leur confiance. Elles semblent apprécier les sorciers capables de suivre leur propre chemin.</p>
+<h3 id="chapitre-15">Crin de Licorne</h3>
+<p>Fidèle et constant.</p>
+<p>Il produit généralement une magie régulière et entretient un lien particulièrement fort avec son premier propriétaire. Il convient aux tempéraments sincères, constants et loyaux.</p>
+<h3 id="chapitre-16">Ventricule de Dragon</h3>
+<p>Puissant et volontaire.</p>
+<p>Ces baguettes apprennent rapidement et produisent volontiers une magie intense. Elles sont souvent attirées par les personnalités affirmées, ambitieuses ou passionnées.</p>
+<h3 id="chapitre-17">Crin de Sombral</h3>
+<p>Mystérieux et extrêmement rare.</p>
+<p>Il semble rechercher des sorciers capables d’affronter les aspects les plus sombres de l’existence sans nécessairement s’y perdre.</p>
+<h3 id="chapitre-18">Corne de Serpent cornu</h3>
+<p>Intuitive et sensible.</p>
+<p>Particulièrement réceptive à la magie et à son environnement, elle convient aux sorciers observateurs, instinctifs et attentifs à ce qui les entoure.</p>
+<h3 id="chapitre-19">Plume d’Hibours</h3>
+<p>Patiente et perspicace.</p>
+<p>Elle semble apprécier les esprits curieux, réfléchis et capables d’observer avant d’agir. Sa magie récompense davantage la maîtrise que la précipitation.</p>
+<h3 id="chapitre-20">Crin de Wampus</h3>
+<p>Fier et combatif.</p>
+<p>Il affectionne les personnalités courageuses, indépendantes et difficiles à intimider.</p>
+<h3 id="chapitre-21">Poil de Lycan</h3>
+<p>Instinctif et farouche.</p>
+<p>Ces baguettes semblent particulièrement sensibles aux émotions de leur propriétaire. Elles apprécient les personnalités protectrices, passionnées et profondément attachées aux leurs.</p>
+<h3 id="chapitre-22">Épine de Monstre du Lac Noir</h3>
+<p>Imprévisible et profonde.</p>
+<p>Elle convient aux sorciers secrets, patients et difficiles à comprendre. Sa magie peut paraître calme avant de révéler brutalement toute son intensité.</p>
+<h3 id="chapitre-23">Fibre de cœur de Snallygaster</h3>
+<p>Vive et nerveuse.</p>
+<p>Elle favorise les sorciers réactifs, audacieux et capables de prendre rapidement des décisions.</p>
+<h3 id="chapitre-24">Moustache de Crumpet</h3>
+<p>Curieuse et singulière.</p>
+<p>Un cœur particulièrement réceptif aux personnalités chaleureuses, inventives et légèrement imprévisibles. Ces baguettes développent souvent une relation très personnelle avec leur propriétaire.</p>
+<h3 id="chapitre-25">Crin de Kelpy</h3>
+<p>Changeant et adaptable.</p>
+<p>Il apprécie les personnalités capables d’évoluer et de s’adapter rapidement à leur environnement.</p>
+<h3 id="chapitre-26">Crin de Troll</h3>
+<p>Robuste et obstiné.</p>
+<p>Il produit des baguettes au caractère particulièrement affirmé. Elles semblent apprécier la détermination, l’endurance et les sorciers qui refusent facilement d’abandonner.</p>
+<h3 id="chapitre-27">Corne de Basilic</h3>
+<p>Sombre et dominante.</p>
+<p>Extrêmement difficile à maîtriser, elle semble rechercher des personnalités possédant une volonté considérable et une grande maîtrise d’elles-mêmes.</p>
+<h3 id="chapitre-28">Cœur de Lélio</h3>
+<p>Un cœur dont les propriétés restent presque entièrement inconnues.</p>
+<p>Les rares écrits qui en font mention se contredisent, et aucun fabricant sérieux ne prétend réellement comprendre les critères selon lesquels il choisit son propriétaire.</p>
+<p>Une seule chose semble certaine :</p>
+<p><strong>s’il vous a choisi, ce n’est probablement pas par hasard.</strong></p>
+<hr/>
+<h1 id="chapitre-29">✧ Les différents bois ✧</h1>
+<h3 id="chapitre-30">Ébène</h3>
+<p>Un bois au caractère puissant, souvent associé aux sorciers <strong>indépendants, déterminés et profondément fidèles à leurs convictions</strong>.</p>
+<p>Les baguettes d’ébène apprécient généralement les personnalités capables d’assumer leurs choix, même lorsque ceux-ci vont à contre-courant.</p>
+<p>Elles conviennent particulièrement aux sorciers possédant une forte identité et une grande maîtrise d’eux-mêmes.</p>
+<h3 id="chapitre-31">Acajou</h3>
+<p>Un bois chaleureux mais affirmé.</p>
+<p>Il semble apprécier les sorciers <strong>ambitieux, volontaires et capables de prendre naturellement leur place</strong>.</p>
+<p>Les baguettes d’acajou sont souvent associées à des personnalités charismatiques qui savent ce qu’elles veulent et n’ont pas peur de le montrer.</p>
+<h3 id="chapitre-32">Noyer noir</h3>
+<p>Un bois exigeant et particulièrement sensible à la sincérité de son propriétaire.</p>
+<p>Il convient aux sorciers <strong>intelligents, instinctifs et capables d’une profonde introspection</strong>.</p>
+<p>Une baguette en noyer noir semble particulièrement mal supporter les propriétaires qui se mentent à eux-mêmes.</p>
+<h3 id="chapitre-33">Noyer</h3>
+<p>Un bois associé à l’intelligence, à la finesse et à la réflexion.</p>
+<p>Il semble rechercher des sorciers <strong>créatifs, perspicaces et capables de comprendre des situations complexes</strong>.</p>
+<p>Il peut former des baguettes extrêmement polyvalentes entre de bonnes mains.</p>
+<h3 id="chapitre-34">Chêne anglais</h3>
+<p>Un bois solide et profondément loyal.</p>
+<p>Il apprécie les personnalités <strong>courageuses, constantes et protectrices</strong>.</p>
+<p>Une baguette en chêne anglais semble particulièrement bien s’accorder aux sorciers qui prennent soin des autres sans renoncer à leurs propres convictions.</p>
+<h3 id="chapitre-35">Chêne rouge</h3>
+<p>Un bois vif et énergique.</p>
+<p>Il préfère généralement les sorciers <strong>réactifs, intuitifs et rapides dans leurs décisions</strong>.</p>
+<p>Contrairement à ce que son nom pourrait laisser penser, il n’indique pas nécessairement un tempérament violent, mais plutôt une grande vivacité.</p>
+<h3 id="chapitre-36">Cèdre</h3>
+<p>Le cèdre est associé à la <strong>force de caractère et à la loyauté</strong>.</p>
+<p>Il choisit souvent des sorciers difficiles à tromper, possédant une excellente intuition concernant les intentions des autres.</p>
+<p>Derrière un tempérament parfois calme se cache généralement une volonté particulièrement solide.</p>
+<h3 id="chapitre-37">Cyprès</h3>
+<p>Un bois souvent lié au courage et au sacrifice.</p>
+<p>Il semble attirer les sorciers <strong>braves, généreux et capables de défendre ceux qui leur sont chers même lorsque cela leur coûte beaucoup</strong>.</p>
+<p>Les baguettes de cyprès développent souvent des liens très profonds avec leur propriétaire.</p>
+<h3 id="chapitre-38">Séquoia</h3>
+<p>Un bois associé à la chance, mais surtout à ceux qui semblent savoir la provoquer.</p>
+<p>Il apprécie les personnalités <strong>audacieuses, instinctives et capables de saisir les opportunités</strong>.</p>
+<p>Les propriétaires de telles baguettes donnent parfois l’impression d’être chanceux, alors qu’ils savent surtout reconnaître le bon moment pour agir.</p>
+<h3 id="chapitre-39">Aubépine</h3>
+<p>Un bois complexe et parfois contradictoire.</p>
+<p>Il semble convenir aux sorciers possédant une personnalité <strong>tourmentée, complexe ou traversant une période importante de transformation</strong>.</p>
+<p>Une baguette d’aubépine peut être difficile à comprendre, mais extrêmement fidèle lorsqu’elle trouve le bon propriétaire.</p>
+<h3 id="chapitre-40">Sorbier</h3>
+<p>Traditionnellement associé à la protection.</p>
+<p>Il semble apprécier les sorciers <strong>justes, courageux et profondément attachés à leurs valeurs</strong>.</p>
+<p>Les baguettes de sorbier sont réputées pour leur forte affinité avec les magies défensives.</p>
+<h3 id="chapitre-41">Laurier</h3>
+<p>Un bois fier et exigeant.</p>
+<p>Il semble rechercher des sorciers <strong>déterminés, ambitieux et capables de défendre ce qu’ils estiment juste</strong>.</p>
+<p>Il supporte particulièrement mal la paresse ou le manque de conviction chez son propriétaire.</p>
+<h3 id="chapitre-42">Érable</h3>
+<p>Un bois associé à l’exploration et à l’évolution.</p>
+<p>Il apprécie les sorciers <strong>curieux, voyageurs dans l’âme et désireux de découvrir de nouvelles formes de magie</strong>.</p>
+<p>Une baguette en érable semble s’épanouir lorsqu’elle accompagne un propriétaire qui continue d’apprendre.</p>
+<h3 id="chapitre-43">Charme</h3>
+<p>Un bois particulièrement lié à l’identité de son propriétaire.</p>
+<p>Il semble choisir les sorciers possédant une <strong>forte conscience d’eux-mêmes, une passion profonde ou un objectif personnel très marqué</strong>.</p>
+<p>Avec le temps, une baguette en charme peut devenir extrêmement fidèle aux principes de son maître.</p>
+<h3 id="chapitre-44">Frêne</h3>
+<p>Un bois loyal et parfois difficile à transmettre.</p>
+<p>Il préfère les sorciers <strong>déterminés, constants et sûrs de leur voie</strong>.</p>
+<p>Les baguettes en frêne ont tendance à développer une affinité très forte avec leur premier véritable propriétaire.</p>
+<h3 id="chapitre-45">Cerisier</h3>
+<p>Un bois élégant, mais qui ne doit pas être sous-estimé.</p>
+<p>Il peut produire des baguettes possédant une <strong>puissance considérable</strong>, particulièrement lorsqu’il est associé à un cœur puissant.</p>
+<p>Il semble apprécier les personnalités disciplinées, sensibles et capables de maîtriser leurs émotions.</p>
+<h3 id="chapitre-46">Orme</h3>
+<p>Un bois équilibré et raffiné.</p>
+<p>Il semble rechercher les sorciers possédant <strong>assurance, précision et maîtrise technique</strong>.</p>
+<p>Les baguettes en orme sont souvent associées à une magie élégante et particulièrement contrôlée.</p>
+<h3 id="chapitre-47">Bois de Sureau</h3>
+<p>Un bois exceptionnellement rare et particulièrement exigeant.</p>
+<p>Il est réputé pour ne reconnaître que des sorciers possédant une <strong>puissance inhabituelle, une grande force de caractère ou un destin hors du commun</strong>.</p>
+<p>Le sureau n’est pas un bois docile.</p>
+<p>Il semble constamment attendre de son propriétaire qu’il soit à la hauteur de ce qu’il pourrait devenir.</p>
+<p>Une baguette en sureau peut être extraordinairement puissante, mais elle est également réputée pour être difficile à maîtriser et encore plus difficile à conserver.</p>
+<hr/>
+<h1 id="chapitre-48">✧ Les différentes longueurs ✧</h1>
+<h3 id="chapitre-49">18 à 22 cm — Très courte</h3>
+<p>Souvent associée à des personnalités précises, discrètes ou particulièrement concentrées.</p>
+<p>Leur magie privilégie généralement la maîtrise plutôt que l’exubérance.</p>
+<h3 id="chapitre-50">23 à 27 cm — Courte</h3>
+<p>Convient souvent aux sorciers méthodiques, rapides et précis.</p>
+<h3 id="chapitre-51">28 à 32 cm — Moyenne</h3>
+<p>La plage la plus équilibrée.</p>
+<p>Elle correspond à des tempéraments relativement polyvalents et capables d’utiliser différentes formes de magie.</p>
+<h3 id="chapitre-52">33 à 37 cm — Longue</h3>
+<p>Souvent associée à des personnalités affirmées possédant une présence naturelle importante.</p>
+<h3 id="chapitre-53">38 à 42 cm — Très longue</h3>
+<p>Ces baguettes semblent rechercher des tempéraments particulièrement expressifs, audacieux ou imposants.</p>
+<h3 id="chapitre-54">43 à 46 cm — Exceptionnelle</h3>
+<p>Extrêmement inhabituelle.</p>
+<p>Une telle longueur accompagne généralement une personnalité ou une manière de pratiquer la magie qui sort fortement de l’ordinaire.</p>
+<p><strong>Une baguette plus longue n’est pas plus puissante.</strong></p>
+<hr/>
+<h1 id="chapitre-55">✧ Les différentes souplesses ✧</h1>
+<h3 id="chapitre-56">Très rigide</h3>
+<p>Inébranlable, obstiné, convictions extrêmement fortes.</p>
+<h3 id="chapitre-57">Rigide</h3>
+<p>Déterminé, stable et fidèle à ses principes.</p>
+<h3 id="chapitre-58">Assez rigide</h3>
+<p>Assuré, mais prudent face au changement.</p>
+<h3 id="chapitre-59">Légèrement souple</h3>
+<p>Stable tout en étant capable de compromis.</p>
+<h3 id="chapitre-60">Souple</h3>
+<p>Ouvert d’esprit, adaptable et réceptif.</p>
+<h3 id="chapitre-61">Assez souple</h3>
+<p>Curieux, évolutif et relativement à l’aise avec le changement.</p>
+<h3 id="chapitre-62">Très souple</h3>
+<p>Spontané, polyvalent et capable de s’adapter rapidement.</p>
+<h3 id="chapitre-63">Flexible</h3>
+<p>Adaptable et équilibré face à l’imprévu.</p>
+<h3 id="chapitre-64">Assez flexible</h3>
+<p>Créatif et ouvert aux nouvelles expériences.</p>
+<h3 id="chapitre-65">Très flexible</h3>
+<p>Libre d’esprit et capable de changer facilement d’approche.</p>
+<h3 id="chapitre-66">Étonnamment flexible</h3>
+<p>Extrêmement adaptable, imprévisible et difficile à enfermer dans une seule voie.</p>
+<h3 id="chapitre-67">Élastique</h3>
+<p>Résilient. Capable de plier sans abandonner ses convictions.</p>
+<h3 id="chapitre-68">Assez élastique</h3>
+<p>Persévérant et capable de rebondir après les changements.</p>
+<h3 id="chapitre-69">Très élastique</h3>
+<p>Extrêmement résilient. Les épreuves ont tendance à le transformer plutôt qu’à le briser.</p>
+<h3 id="chapitre-70">Pliable</h3>
+<p>Malléable et influençable. Peut également caractériser une personnalité encore en construction.</p>
+<h3 id="chapitre-71">Cassante</h3>
+<p>Intense et intransigeante. Supporte difficilement les changements qui lui sont imposés.</p>
+<hr/>
+<h1 id="chapitre-72">✧ Lire votre baguette ✧</h1>
+<p>Pour comprendre réellement votre baguette, <strong>ne regardez jamais un seul élément séparément</strong>.</p>
+<p>Imaginez par exemple :</p>
+<p><strong>Ébène • Plume de Phénix • 34 cm • Très flexible</strong></p>
+<p>L’ébène donne son tempérament général.</p>
+<p>Le ventricule de Dragon révèle une magie volontaire et intense.</p>
+<p>Ses 36 cm suggèrent une personnalité possédant une présence affirmée.</p>
+<p>Sa rigidité indique un propriétaire déterminé, peu disposé à abandonner ses convictions.</p>
+<p>Et sa rareté indique que l’association de ses composants est inhabituelle.</p>
+<p>Pris séparément, chacun de ces éléments raconte quelque chose.</p>
+<p><strong>Ensemble, ils racontent le sorcier que la baguette a choisi.</strong></p>
+<p>À l'inverse :</p>
+<p><strong>Chêne anglais • Crin de Licorne • 29 cm • Rigide</strong></p>
+<p>évoquerait davantage une personnalité loyale, protectrice et stable, profondément attachée à ceux qu’elle considère comme les siens.</p>
+<p><strong>Chaque caractéristique nuance les autres.</strong></p>
+<p>C’est cette combinaison qui rend chaque baguette véritablement unique.</p>
+<hr/>
+<h1 id="chapitre-73">✧ Un dernier conseil ✧</h1>
+<p>Ne cherchez pas nécessairement la baguette la plus rare.</p>
+<p>Ne cherchez pas la plus longue.</p>
+<p>Ne recherchez pas non plus le cœur dont la réputation semble la plus impressionnante.</p>
+<p>Une baguette exceptionnelle entre les mains du mauvais sorcier ne sera jamais aussi remarquable qu’une baguette parfaitement accordée au sien.</p>
+<p>Certaines choisissent des héros.</p>
+<p>D’autres choisissent des êtres beaucoup plus difficiles à comprendre.</p>
+<p>Et parfois, il faut plusieurs années avant de découvrir <strong>pourquoi une baguette vous a choisi, vous.</strong></p>
+<p><strong>Après tout… la baguette connaît parfois son sorcier bien avant que celui-ci ne se connaisse lui-même.</strong></p>
+</article></section><section class="placeholder" id="qcm"><h2>QCM</h2><p>Section à relier à votre système de whitelist.</p></section><section class="placeholder" id="galerie"><h2>Galerie</h2><p>Section à compléter.</p></section><section class="placeholder" id="boutique"><h2>Boutique</h2><p>Section à compléter.</p></section></main><footer>✦ ACADÉMIE DE MYRRADIEL ✦</footer><script src="/app.js"></script><script src="/accordions.js"></script><script src="/stars.js"></script></body></html>
